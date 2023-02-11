@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.box {
+    /* --height: 200px; */
+    /* height: var(--height); */
+    background-color: orange;
+    /* text-align: center; */
+    /* font-weight: bold;
+    line-height: 100px; */
+    /* display: flex;
+    align-items: center;  căn giữa theo trục dọc */
+    /* justify-content: center; giống như trên nhưng được linh động để sửa đổi */
+    /* justify-content: space-between, space-around; */
+    /* position: relative; */
+    /* text-align: center; */
+    height: 100px;
+    position: relative;
+    display: flex;
+}
+
+ 
+    /* text-align: căn giữa (có tính chất kế thừa) */
+    /* Cách sử dụng:
+    Khi mà chỉ có một thẻ cần chỉnh => chỉnh thẻ đó luôn
+    Khi có nhiều thẻ con cần chỉnh => chỉnh thẻ cha chứa tất cả các thẻ con cần chỉnh */
+
+    /* line-height: ...px; căn giữa ở trong 1 box (có tính chất kế thừa) */
+
+h3 {
+    /* margin: auto; */
+    /* position: absolute;
+    top: 50%; */
+    /* left: 50%;
+    transform: translateY(-50%) translateX(-50%);  */
+    /* giống như tính chất của relative: bị phụ thuộc vào chính đối tượng đó */
+    /* hoặc */
+    /* right: 50%; */
+    /* transform: translateY(-50%) translateX(50%); */
+    /* transform: translate(-50%, -50%); */
+    /* line-height: var(--height); */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* border-left: 3px solid #333;
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    margin: auto;
+    position: relative;
+}
+
+h3::after {
+    position: absolute;
+    left: -10px;
+    content: "";
+    border-left: 3px solid #333;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}

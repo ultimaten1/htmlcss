@@ -1,0 +1,12 @@
+html, body {
+    margin: 0;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    /* background: ; */
+    /* background: background-color_url()_{background-repeat}_background-position / background-size_{background-repeat};
+    Để ý: "MDN Reference": chứa đầy đủ thông tin, thông số về thuộc tính CSS mà vừa click vào
+    Có phần Syntax (Cú pháp) để học thêm */
+}

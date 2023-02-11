@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    background-color: #333;
+}
+
+.box2 {
+    background-color: orange;
+}
+
+.box3 {
+    background-color: firebrick;
+    padding: 10px;
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: #333; */
+    /* border-top-width: 10px;
+    border-right-width: 0;
+    border-bottom-width: 0;  mặc định là 2 px cho set border 
+    border-left-width: 0; */
+    border: 10px solid;
+    border-color: #333;
+}

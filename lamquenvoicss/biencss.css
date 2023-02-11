@@ -1,0 +1,21 @@
+/* Lớp giả: Sau này sẽ học */
+
+/* Global */
+:root {
+    --text-color: violet;   
+}   
+/* Function */
+h1 {
+    /* Local */
+    --my-color: green;
+    color: var(--my-color);
+    /* color: var(--text-color); */
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+h3 {
+    color: var(--text-color);
+}

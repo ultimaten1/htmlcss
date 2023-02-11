@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-image: 
+    url(https://i.dailymail.co.suk/1s/2022/02/16/08/54259261-10518347-image-a-1_1644999812241.jpg),
+    url(./placeholder.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

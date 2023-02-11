@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+}
+
+/* absolute: bị phụ thuộc vào một thẻ cha gần nhất có thuộc tính position 
+để lấy thẻ cha đó làm gốc tọa độ. Thường kết hợp với relative */
+
+.box {
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    position: relative; 
+    /* mục đích: khi sử dụng absolute ở thẻ con: 
+    luôn coi thẻ gần nhất (thẻ cha gần nhất) của nó có thuộc tính position 
+    sẽ lấy thẻ (cha) đó làm gốc tọa độ */
+}
+
+.box-child {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    position: absolute;
+    /* top: 10px; /* nếu sử dụng đồng thời top và bottom: ưu tiên top 
+    right: 10px;  nếu sử dụng đồng thời left và right: ưu tiên left
+    bottom: 10px;
+    left: 10px; */
+    top: 0;
+    right: 0;
+}
+
+.box2 {
+    width: 400px;
+    height: 100px;
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

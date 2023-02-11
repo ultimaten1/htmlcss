@@ -1,0 +1,32 @@
+Kĩ thuật xây dựng layout: Flexbox
+    - Có tính linh hoạt, linh động rất cao
+    => Dễ dàng tạo ra giao diện website cũng như là bố cục hiển thị website
+
+*Tất cả lập trình viên FE đều phải biết.
+
+flex container: thẻ chứa - thẻ cha
+flex item: ba thẻ con trực tiếp của thẻ chứa
+
+main axis: trục chính của flex container
+cross axis: trục luôn vuông góc với trục chính của flex container
+
+main start - main end:
+cross start - cross end:
+
+main size - cross size: của flex item
+
+*Sự khác nhau:
+main size là kích thước có chiều song song với main axis
+cross size là kích thước có chiều song song với cross axis
+
+Chiều vẽ có thể thay đổi trong thuộc tính của CSS
+=> Mỗi thành phần có một vai trò và nhiệm vụ khác nhau để có thể thay đổi bố cục của website.
+
+*main axis: quyết định hướng mà flex item được nằm (mặc định: nằm ngang)
+*main start - main end: quyết định flex item được hiển thị lần lượt theo hướng nào - có thể đưa flex item căn giữa, sang trái hay sang phải 
+(mặc định: trái -> phải: 1 - 2 - 3)
+                        phụ thuộc vào trình duyệt của người dùng
+*cross axis: quyết định flex item có nhiều sẽ nhảy lên trên hay xuống dưới - để flex item hiển thị trong trường hợp có nhiều hàng (nhảy lên trên hay nhảy xuống dưới) - có thể chỉnh lên trên, xuống dưới và căn giữa theo chiều cao.
+*cross start - cross end: đánh số thứ tự hiển thị theo hướng nào
+
+

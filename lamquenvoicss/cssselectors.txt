@@ -1,0 +1,10 @@
+CSS Selectors: 
+- Là bộ phận
+
+Trong một trang web => Có nhiều thẻ HTML, mỗi thẻ có style khác nhau.
+Làm sao để có thể CSS cho từng thẻ?
+
+=> Biết cách sử dụng selectors để chọn ra được thẻ mong muốn rồi thêm CSS cho nó
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- CSS units: Là những đơn vị được sử dụng ở trong CSS để có thể tùy chỉnh kích thước của những đối tượng hiển thị ở trang web
+Absolute units: Giá trị tuyệt đối: Kích thước cố định
+px, pt, cm, mm, inch, pc
+
+px: những điểm ảnh ở trên màn hình (độ phân giải)  
+- Khi định nghĩa 1 px ở trên CSS thì:
++ Với màn có độ phân giải thấp: 1px tương ứng với 1 điểm ảnh thực trên màn
++ Với màn có độ phân giải cao: 1px tương ứng với nhiều điểm ảnh hơn trên màn
++ Càng cao => Chiếm nhiều điểm ảnh hơn
+
+Relative units: Giá trị tương đối: Kích thước không cố định 
+- Đều cần có một nơi để phụ thuộc vào.
+%, rem, em, vw, vh, vmin, vmax, ex, ch 
+
+%: phụ thuộc vào thẻ chứa nó 
+=> Muốn có một đối tượng có chiều ngang tỉ lệ với một đối tượng chứa nó
+VD ở đây là thẻ body: đang kế thừa chiều ngang của trình duyệt
+Khi tăng chiều ngang trình duyệt -> cũng rộng theo
+
+rem: phụ thuộc vào thẻ html
+em: phụ thuộc vào thẻ gần nhất chứa mà có thuộc tính "font-size"
+- Thực tế, thường sử dụng rem hơn: Vì rem "dễ kiểm soát hơn"  
+
+vw, vh:
+v: viewport
+w: width, h: height
+vw: độ rộng theo chiều ngang của trình duyệt
+vh: độ rộng theo chiều dọc của trình duyệt
+=> Muốn có một đối tượng nào đó có chiều dọc và chiều ngang luôn bằng với màn hình 
+- Thực tế, thường sử dụng % để chia layout
+-->
+
+<!-- Ví dụ về đặt width theo đơn vị %:
+Thực tế, thuộc tính height đặt theo % cũng hoạt động tương tự, tuy nhiên các bạn cần chú ý một chút để tránh hiểu nhầm.
+Hãy nhớ, thuộc tính width và height, khi đặt theo % sẽ tỉ lệ vào thẻ mà nó phụ thuộc, mặc định là thẻ cha trực tiếp của nó. 
+Vì vậy, thẻ cha của nó phải có kích thước cho width hoặc height thì thẻ con đặt theo % mới có tác dụng. -->
+
+<!-- 
+Với chiều rộng thì các thẻ như body, div sẽ mặc định có width: 100%. 
+Vì vậy, các bạn mà comment thuộc tính width của .box1 lại, bạn sẽ thấy nó chiếm 100% chiều rộng.
+
+Với chiều cao, mặc định các thẻ có height: auto, chiều cao sẽ tự động thay đổi khi nội dung bên trong nó tăng lên. 
+Nếu thẻ cha có height: auto và thẻ con của nó height: 50% thì sẽ không có tác dụng, khi ấy thẻ con vẫn có height: auto. -->
+
+<!-- Vì vậy, để một thẻ có thể đặt height theo % thì thẻ nó phụ thuộc phải có một chiều cao mang tính cố định. -->
+
+<!-- font-size: 62.5%
+1rem = 10px, 1.6rem = 16px, 2rem = 20px, 2.4rem = 24px. -->
+<html>
+    <head>
+        <title>Trần Thành Đạt</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="donvicss.css">
+        <style>
+            html {
+                 font-size: 100%; /* 100% = 16px */
+            }
+            .box {
+                width: 50vw;
+                height: 50vh;
+                background-color: red;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            /* .box {
+                height: 50px;
+            }
+
+            .box1 {
+                width: 25%;
+                background-color: green;
+            }
+
+            .box2 {
+                width: 50%;
+                background-color: violet;
+            }
+
+            .box3 {
+                width: 75%;
+                background-color: brown;
+            }
+
+            .box4 {
+                width: 100%;
+                background-color: orange;
+            } */
+        </style>
+    </head>
+
+    <body style="font-size: 50px"> <!-- thẻ body mặc định margin = 8px; -->
+        <div class="box"></div>  
+        <div>
+            <h1>CSS units?</h1>
+        </div>
+    </body>
+</html>

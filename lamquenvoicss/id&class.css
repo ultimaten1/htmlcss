@@ -1,0 +1,22 @@
+/* CSS selectors: */
+
+/* ID: */
+#first-heading {
+    color: red;
+}
+
+/* Class: */
+.second-heading {
+    color: green;
+    font-size: 20px;       
+}
+
+/*
+Làm bài tập tại đây!
+
+Gợi ý, đây là một số cách kết hợp ID, CSS, Tag name để select:
+    - tagName.class
+    - tagName#id
+    - #id.class
+    - .class#id
+*/

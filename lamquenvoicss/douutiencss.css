@@ -1,0 +1,20 @@
+/* "*": Tất cả những file nhúng ở trong thẻ html */
+/* * {
+    color: red;
+}
+
+li {
+    color: indianred;
+} */
+
+html {
+    color: salmon;
+}
+
+h1 {
+    color: red !important;
+}
+
+h1 {
+    color: green;
+}

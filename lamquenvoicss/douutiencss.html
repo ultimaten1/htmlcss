@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<!-- Độ ưu tiên của CSS:
+1. Internal, External: Tương đương nhau
+- Khác nhau ở cách gọi ra sử dụng. Phần nào mà được gọi sau => Mới hơn và được ưu tiên.
+* !improtant - 10000
+2. Inline - 1000
+3. #id - 100
+4. .class - 10
+5. tag - 1 
+Khi một phần tử mà được sử dụng bằng nhiều cách để gọi CSS như thế này
+Cách nào nhiều điểm hơn - ưu tiên hơn 
+6. Equal specificity?
+-> Sự giống nhau khi gọi tới một selector giống nhau.
+7. Universal selector and inherited? - 0
+-> Phổ cập chung -->
+
+<html>
+    <head>
+        <title>Trần Thành Đạt</title>
+        <meta charset="utf-8">
+        <style>
+            /* h1#heading-id.heading-class {
+                color: violet;
+            }
+
+            #heading-id.heading-class {
+                color: red;
+            }
+
+            .heading-class {
+                color: yellow;
+            }
+            h1 {
+                color: green;
+            }      
+            
+            .heading-class {
+                color: yellow;
+            } */
+            
+        </style>      
+        <link rel="stylesheet" href="douutiencss.css"> 
+    </head>
+    
+    <body>
+        <div>
+            <h1 style="color: black" id="heading-id" class="heading-class">Priority?</h1>
+            <ol>
+                <li>Internal, External?</li>
+                <li>Inline - 1000</li>
+                <li>#id - 100</li>
+                <li>.class - 10</li>
+                <li>tag - 1</li>
+                <li>Equal specificity?</li>
+                <li>Universal selector and inherited?</li>
+            </ol>
+        </div>
+    </body>
+</html>

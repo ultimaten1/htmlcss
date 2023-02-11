@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #333; */
+    background-image: url(https://i.stack.imgur.com/7YKUD.jpg);
+    /* linear-gradient(0, rgba(0, 255, 255, 0.5), rgba(255, 0, 0, 0.5)), /* 3 tham số: Hướng xoay của dải màu chuyển (deg) và mặc định là 45deg, màu để bắt đầu chuyển, màu điểm cuối của dải màu chuyển */
+    /* url(https://cdn.24.co.za/files/Cms/General/d/4470/c8268afc745b48febc0226922b84e2e1.jpg); */
+    /* rgba(): a: alpha (độ trong suốt)
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    /* 
+    url(https://cdn.pixabay.com/photo/2013/07/12/17/39/star-152151__340.png), 
+    url(https://cdn.24.co.za/files/Cms/General/d/4470/c8268afc745b48febc0226922b84e2e1.jpg);
+    background-size: 100% 100%; /* width - height */
+    /* Chiều ngang: 100px - chiều dọc: auto => Chiều ngang chiếm 100% ô chứa nó
+    background-repeat: no-repeat; mặc định là repeat  repeat-x; repeat-y */
+    background-size: 100px;
+}

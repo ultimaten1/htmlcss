@@ -1,0 +1,6 @@
+Position:
+
+1. Relative
+2. Absolute
+3. Fixed
+4. Sticky

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!-- Có 3 cách sử dụng CSS trong HTML:
+Internal, External và Inline
+*/*
+Internal: Sử dụng một cặp thẻ "style" (ở trong thẻ head) đặt ở trong thẻ html và viết CSS ở trong cặp thẻ "style" đó
+External: Tạo file CSS ở bên ngoài (có thể ở bên ngoài project hoặc link ở một nơi khác ở trên Internet) và sử dụng một cặp thẻ "link" để dẫn tới file CSS.
+Inline: Sử dụng một Attribute "style" ở trong thẻ mở của thẻ html và viết các thuộc tính CSS vào. -->
+
+<html>
+    <head>
+        <title>F8 - Shop</title>
+        <meta charset="utf-8">
+        <!-- External:
+        <link rel="stylesheet" href="firstcss.css">
+        <style>
+            /* Internal: */
+            h1 {
+                color: red;
+                font-size: 40px;
+            }
+        </style> -->
+    </head>
+
+    <body>
+        <div>
+            <!-- Inline:  -->
+            <h1 style="color: red; font-size: 40px">CSS in HTML?</h1>
+            <ol>
+                <li>Internal</li>
+                <li>External</li>
+                <li>Inline</li>
+            </ol>
+        </div>
+    </body>
+</html>

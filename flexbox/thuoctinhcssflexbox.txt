@@ -1,0 +1,20 @@
+CSS Flexbox?
+
+display: flex | inline-flex => Sử dụng layout flexbox hay không?
+flex-direction: row | column => Thay đổi phương hướng của main axis
+flex-wrap: nowrap | wrap | wrap-reverse => Tùy chọn xuống dòng hay nhảy lên trên - đảo chiều cross start - cross end
+flex-basis: <length> => Đặt kích thước của main size
+justify-content: flex-start | flex-end | center | space-between | space-around => Căn được flex item theo cùng phuơng hướng của main axis - dành cho thẻ cha - thẻ chứa
+justify-self: flex-start | flex-end | center => Nếu như set thuộc tính cho thẻ cha rồi thì tất cả thẻ con được thừa hưởng
+align-content: flex-start | flex-end | center => Căn được thành phần bên trong flex item theo cùng phuơng hướng của cross size
+align-self: flex-start | flex-end | center => Same 
+flex-grow: <number> => Thay đổi kích thước của main size - thay đổi kích thước flex item theo hướng của main size
+-> Giúp chia theo trọng số - tỉ lệ
+flex-shrink: <number> => Ngược lại với flex-grow
+
+flex: <number> => Shorthand: <flex-basis> <flex-grow> <flex-shrink>
+
+flex-flow: <number> => Shorthand: <flex-wrap> <flex-direction>
+
+order: <number> => Quyết định thứ tự flex item hiện thị ai trước ai sau
+

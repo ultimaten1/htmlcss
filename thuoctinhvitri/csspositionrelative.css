@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+}
+
+h1 {
+    position: relative;
+    /* relative: không bị phụ thuộc vào đối tượng nào khác cả.
+    Lấy vị trí đối tuojng đang đứng để làm gốc tọa độ.
+    => Phụ thuộc vào chính đối tượng đó (đứng yên ở đó)
+    /* Có 4 hướng trong relative: top right bottom left. Chỉ hoạt động khi có position */
+    top: 100px; /* top != margin-top */
+}
+

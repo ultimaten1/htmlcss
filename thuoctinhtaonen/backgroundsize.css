@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: 
+    url(https://cdn.24.co.za/files/Cms/General/d/4470/c8268afc745b48febc0226922b84e2e1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; /* dạng giá trị tương đối hoặc tuyệt đối */
+    /* contain: trong width và height sẽ cố gắng lấy chiều dài nhất có thể
+    nhưng phải đảm bảo là không bị che khuất hoặc không bị cắt xén đi một phần của hình ảnh */
+    /* cover: trong width và height sẽ cố gắng lấy chiều dài nhất có thể
+    nhưng nó chấp nhận là sẽ che khuất đi bức ảnh */
+
+}

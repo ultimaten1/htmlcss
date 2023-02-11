@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- 
+Selector	        Ví dụ	        Mô tả
+
+.class	            .intro	        Chọn tất cả các thẻ có class=“intro”
+.class1.class2	    .name1.name2	Chọn tất cả các thẻ có cả name1 và name2 được đặt trong thuộc tính class của nó
+.class1 .class2	    .name1 .name2	Chọn tất cả các thẻ có class=“name2” là con của một phần tử có class=“name1”
+*	                *	            Chọn tất cả các thẻ
+element	            h2	            Chọn tất cả các thẻ h2
+element.class	    div.box	        Chọn tất cả thẻ div có class=“box”
+element, element	div, h2	        Chọn tất cả thẻ div và h2
+element element	    div p	        Chọn tất cả thẻ p trong thẻ div
+element >           div > p         Chọn tất cả thẻ p là con trực tiếp của thẻ div
+element	            	            
+element +           div + p	        Chọn thẻ p đứng liền kề sau thẻ div
+element	
+element ~           div ~ p	        Chọn tất cả thẻ p đứng sau thẻ div
+element	 
+-->
+<html>
+    <head>
+        <title>Trần Thành Đạt</title>
+        <meta charset="UTF-8">    
+    </head>
+
+    <body>
+        <div>
+            <h2 id="primary-heading">Tiêu đề 1</h2>
+            <h2 id="secondary-heading">Tiêu đề 2</h2>
+
+            <p class="paragraph">Đoạn văn 1</p>
+            <p class="paragraph">Đoạn văn 2</p>
+            <p class="other-paragraph">Đoạn văn 3</p>
+
+            <p class="p1-normal">Đoạn văn 1</p>
+            <p class="p1-normal">Đoạn văn 2</p>
+            <p class="p1-normal p2-red">Đoạn văn 3</p>
+            <p class="p1-normal p2-red">Đoạn văn 4</p>
+            <style>
+                #primary-heading {
+                    color: red;
+                }
+                
+                .paragraph {
+                    color: green;
+                }
+
+                .p1-normal {
+                    color: green;
+                }
+                
+                /* Lưu ý: Các tên class viết liền nhau, không có khoảng trắng */
+                .p1-normal.p2-red {
+                    color: red;
+                }
+            </style>
+        </div>
+
+        <p class="children-1">Đoạn văn 1 (không parent)</p>
+        <p class="children-2">Đoạn văn 2 (không parent)</p>
+
+        <div class="parent">
+            <p>Đoạn văn 1 (parent 1)</p>
+            <p class="children-1">Đoạn văn 1 (con của .parent)</p>
+            <p class="children-2">Đoạn văn 1 (con của .parent)</p>
+        </div>
+
+        <style>
+            /* Chọn tất cả thẻ "p" là con của thẻ có class "parent" */
+            .parent p {
+                color: green;
+            }
+            /* Chọn tất cả thẻ có class "children-1" là con của thẻ có class "parent" */
+            .parent .children-1 {
+                color: red;
+            }
+        </style>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+html, body {
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background-color: darkorchid;
+    padding: 16px;
+    border: 2px solid #333;
+    box-sizing: border-box; /* mặc định là content box */ /* unset trong trường hợp muốn hủy mà không biết nó ở đâu */
+    /* Chú ý: Nó sẽ tự động tính toán để không phải mất công chỉnh sửa khi có thay đổi.
+    Chiều ngang của element = tổng kích thước của border + padding + content 
+    Nó tự động tính toán: => Content cần 
+    Tuy nhiên nếu cố tình khai báo padding hay border có kích thước lớn: Không giữ được
+    Được sử dụng trong base CSS dùng để làm web*/
+}

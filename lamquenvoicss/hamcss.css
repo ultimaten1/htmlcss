@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+}
+
+.box {
+    width: calc(120px + 50px);
+    height: 120px;
+    background: rgb(2, 255, 255);
+}
+
+a::after {
+    content: " ("attr(href)")";
+}
+
+.box::after {
+    content: attr(data-title);
+}

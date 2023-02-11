@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: 
+    url(https://cdn.24.co.za/files/Cms/General/d/4470/c8268afc745b48febc0226922b84e2e1.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    /* background-position: nó giúp tùy chỉnh vị trí của hình ảnh nền trong CSS 
+    top (top center), top left, top right, center, center left, center right, bottom (bottom center), bottom left, bottom right */
+    /* background-position: 50px; //...px: tính từ khoảng cách giữa position-y và chiều bên trái hình đang xét và mặc định là center */  
+    /* background-position: top 20px right 20px; // tính thêm khoảng cách mong muốn được khoảng trắng ra 
+    nếu trường hợp số âm: chạy ngược lại vị trí mà mình mong muốn 
+    có số relative (tương đối) và absolute (tuyệt đối) */
+    background-position: 30px 50px; /* mặc định là top left; 0 0*/
+    /* 30px: từ position-y => ảnh
+    50px: từ position-x => ảnh 
+    cũng như trên: có số âm, relative và absolute và cùng tính chất ở trên */
+}

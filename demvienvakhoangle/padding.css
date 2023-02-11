@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+}
+
+.box {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 {
+    background-color: #333;
+}
+
+.box2 {
+    background-color: orange;
+}
+
+.box3 {
+    background-color: firebrick;
+    /* padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px; */
+    /* padding: 10px; */
+    /* padding: 10px 12px; trên dưới: 10px; phải trái: 12px; */
+    /* padding: 10px 12px 8px; trên: 10px; phải trái: 12px; dưới: 8px; */
+    /* padding: 10px 12px 8px 6px; trên: 10px; phải: 12px; dưới: 8px; trái: 6px; theo chiều kim đồng hồ */
+}

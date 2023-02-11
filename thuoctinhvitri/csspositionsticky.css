@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+}
+
+/* sticky: thường làm ra những menu, header hay navbar bám dính */
+/* => Bình thường trang web sẽ không chạm vào top của menu, khi kéo xuống đến top: 
+dừng hẳn ở top, những thành phần khác tiếp tục di chuyển */
+
+/* Hiện tại không hỗ trọ trên IE */ 
+/* caniuse.com: search thuộc tính có thể dùng trên CSS */
+
+h1 {
+    margin-top: 40px;
+    padding: 0 16px;
+    color: #fff;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* phải có 3 thuộc tính ở trên mới sử dụng được */
+}
+
+ul {
+    height: 2000px;
+}
